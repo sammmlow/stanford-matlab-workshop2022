@@ -63,7 +63,7 @@ disp([ 'Line 45: x7 = [ ', num2str(x7), ' ]' ]);
 % First let’s take a look at transposing…
 x8 = [1;2;3];   % Transposing a vector
 x9 = [1 2 3]';  % Also transposing a vector
-x10 = transpose(x); % This works too!
+x10 = transpose([1 2 3]); % This works too!
 
 % Now lets take a look at strings. Single quotation marks denote character
 % vectors, while double quotation marks denote a single string object.
@@ -144,6 +144,18 @@ disp([ 'Line 139: Area(s) x18 = [ ', num2str(x18), ' ]' ]);
 %% Getting familiar with plotting!
 % =========================================================================
 % Now we have the basics of vectors under our arms, we can go ahead to do
-% some plotting.
+% some plotting. You can refer to the rest of the slides for this part!
 
+% You can define a new figure by using the command ‘figure’
+% Figures can be numbered such as figure(1), figure(2), …
+% To plot multiple graphs in the same figure use ‘hold on’
+% ‘xlabel’, ‘ylabel’, ‘zlabel’ are used to label the axes
+% Numerical functions: use the command ‘plot(x,y)’
+% Other types of plots: bar, scatter, 3D
+% Plotting options: ‘LineStyle’, ‘Color’, ‘Linewidth’, ‘MarkerSize’, ...
+
+% Here is the most basic plotting example for a quadratic curve y=x^2!
+x19 = linspace(1,100);
+x20 = x19.^2; % Let's square every term in the x19 variable.
+plot(x19,x20);
 
